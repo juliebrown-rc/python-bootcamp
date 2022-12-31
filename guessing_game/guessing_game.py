@@ -1,14 +1,15 @@
-# Game for guessing which cup has the ball
+"""Game for guessing which cup has the ball"""
 
 from random import shuffle
 
-def return_random(list):
-    shuffled = list
-    shuffle(list)
-    return shuffled[0]
+def return_random(input_list):
+    """returns a random element of a list"""
+    shuffle(input_list)
+    return input_list[0]
 
 def run_game():
-    x = 0
+    """play the guessing game"""
+    input_guess = 0
     answer = return_random([1,2,3])
     print('''
     New Game! Guess where the ball is!
@@ -19,14 +20,14 @@ def run_game():
 
        ?         ?        ?
     ''')
-    x = 0
+    input_guess = 0
     while True:
         try:
-            x = int(input())
-            if x == answer:
+            input_guess = int(input())
+            if input_guess == answer:
                 print(f'You win! The answer was {answer}')
                 return
-            elif x not in {1,2,3}:
+            if input_guess not in {1,2,3}:
                 print('ERROR - Not in range! You must guess a number from 1-3\nGuess again!')
             else:
                 print('Nope! Guess again.')
