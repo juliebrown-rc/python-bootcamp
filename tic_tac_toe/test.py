@@ -1,5 +1,5 @@
-import main
 import unittest
+import main
 
 class Test_TestTicTacToe(unittest.TestCase):
     def test_move_to_coordinates_x(self):
