@@ -1,5 +1,5 @@
-from deck import Deck
-from player import Player
+from basics.deck import Deck
+from basics.player import Player
 
 jay = Player('Jay')
 julie = Player('Julie')
