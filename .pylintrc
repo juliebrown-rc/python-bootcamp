@@ -107,7 +107,8 @@ disable=
     cyclic-import,
     missing-class-docstring,
     no-value-for-parameter,
-    no-member
+    no-member,
+    no-name-in-module
 
 
 [REPORTS]
