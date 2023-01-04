@@ -1,5 +1,6 @@
 from basics.deck import Deck
 from basics.player import Player
+# TODO: rename basics dir to 'src'
 
 jay = Player('Jay')
 julie = Player('Julie')
